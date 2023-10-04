@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace FramkeDNDBMod6Assignment.Models
 {
-    internal class Movie
+    public class Movie : Media
     {
+        public string Genres { get; set; }
+
+        public override string Display()
+        {
+            string movieInfo = $"Movie ID: {Id}\nTitle: {Title}\nGenre: {Genres}";
+
+            return movieInfo;
+        }
     }
 }
