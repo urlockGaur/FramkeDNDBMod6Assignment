@@ -15,11 +15,13 @@ namespace FramkeDNDBMod6Assignment.Models
 
         public string Regions { get; set; }
 
-        public override string Display()
+        public override void Display()
         {
-            string videoInfo = $"Video ID: {Id}\nTitle: {Title}\nFormat: {Format}\nLength: {Length}\nRegion: {Regions}";
-
-            return videoInfo;
+            Console.WriteLine($"Video ID: {Id}");
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Format: {Format}");
+            Console.WriteLine($"Length: {Length} minutes");
+            Console.WriteLine($"Regions: {Regions}");
         }
     }
 }

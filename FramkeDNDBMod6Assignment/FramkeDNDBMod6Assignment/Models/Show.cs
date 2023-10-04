@@ -12,11 +12,15 @@ namespace FramkeDNDBMod6Assignment.Models
         public int Episode {  get; set; }
         public string Writers { get; set; }
 
-        public override string Display()
+        public override void Display()
         {
-            string showInfo = $"Show ID: {Id}\nTitle: {Title}\nSeason: {Season}\nEpisode: {Episode}\nWriters: {Write}";
-
-            return showInfo;
+       
+            Console.WriteLine($"Show ID: {Id}");
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Season: {Season}");
+            Console.WriteLine($"Episode: {Episode}");
+            Console.WriteLine($"Writers: {Writers}");
+        
         }
     }
 }

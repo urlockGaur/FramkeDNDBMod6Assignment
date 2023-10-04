@@ -10,11 +10,13 @@ namespace FramkeDNDBMod6Assignment.Models
     {
         public string Genres { get; set; }
 
-        public override string Display()
+        public override void Display()
         {
-            string movieInfo = $"Movie ID: {Id}\nTitle: {Title}\nGenre: {Genres}";
 
-            return movieInfo;
+            Console.WriteLine($"Movie ID: {Id}");
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Genres: {Genres}");
+
         }
     }
 }

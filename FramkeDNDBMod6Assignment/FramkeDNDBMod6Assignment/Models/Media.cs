@@ -12,7 +12,7 @@ namespace FramkeDNDBMod6Assignment.Models
         public string Title { get; set; }
 
 
-        public abstract string Display();
+        public abstract void Display();
 
 
 
